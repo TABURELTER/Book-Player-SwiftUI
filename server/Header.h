@@ -10,3 +10,7 @@
 
 
 #endif /* Header_h */
+// GCDWebServer headers
+#import <GCDWebServer/GCDWebServer.h>
+#import <GCDWebServer/GCDWebServerDataResponse.h>
+

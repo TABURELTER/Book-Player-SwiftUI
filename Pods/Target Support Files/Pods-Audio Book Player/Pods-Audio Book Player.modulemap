@@ -1,0 +1,6 @@
+framework module Pods_Audio_Book_Player {
+  umbrella header "Pods-Audio Book Player-umbrella.h"
+
+  export *
+  module * { export * }
+}

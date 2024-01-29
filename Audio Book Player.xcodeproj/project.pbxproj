@@ -9,21 +9,33 @@
 /* Begin PBXBuildFile section */
 		1770B0E52B641ADE000EF6A9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1770B0E42B641ADE000EF6A9 /* AppDelegate.swift */; };
 		1770B0E72B641ADE000EF6A9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1770B0E62B641ADE000EF6A9 /* SceneDelegate.swift */; };
-		1770B0E92B641ADE000EF6A9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1770B0E82B641ADE000EF6A9 /* ViewController.swift */; };
+		1770B0E92B641ADE000EF6A9 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1770B0E82B641ADE000EF6A9 /* TabBarController.swift */; };
 		1770B0EC2B641ADE000EF6A9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1770B0EA2B641ADE000EF6A9 /* Main.storyboard */; };
 		1770B0F12B641ADF000EF6A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1770B0F02B641ADF000EF6A9 /* Assets.xcassets */; };
 		1770B0F42B641ADF000EF6A9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1770B0F22B641ADF000EF6A9 /* LaunchScreen.storyboard */; };
+		179568A82B671145005CE021 /* filemanager.js in Resources */ = {isa = PBXBuildFile; fileRef = 179568A62B671145005CE021 /* filemanager.js */; };
+		179568A92B671145005CE021 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 179568A72B671145005CE021 /* index.html */; };
+		179568AB2B6711F8005CE021 /* ConsoleFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179568AA2B6711F8005CE021 /* ConsoleFileManager.swift */; };
+		17D840192B6665830080D25E /* WebServerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D840182B6665830080D25E /* WebServerManager.swift */; };
+		7C404BC3231C7BBEFDA1AD04 /* Pods_Audio_Book_Player.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6CA10DA5E9F06599A8D3CD2 /* Pods_Audio_Book_Player.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1770B0E12B641ADE000EF6A9 /* Audio Book Player.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Audio Book Player.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1770B0E42B641ADE000EF6A9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1770B0E62B641ADE000EF6A9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1770B0E82B641ADE000EF6A9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1770B0E82B641ADE000EF6A9 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		1770B0EB2B641ADE000EF6A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1770B0F02B641ADF000EF6A9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1770B0F32B641ADF000EF6A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1770B0F52B641ADF000EF6A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		179568992B66875A005CE021 /* Audio Book Player.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Audio Book Player.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		179568A62B671145005CE021 /* filemanager.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = filemanager.js; sourceTree = "<group>"; };
+		179568A72B671145005CE021 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		179568AA2B6711F8005CE021 /* ConsoleFileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsoleFileManager.swift; sourceTree = "<group>"; };
+		17D840182B6665830080D25E /* WebServerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebServerManager.swift; sourceTree = "<group>"; };
+		A6CA10DA5E9F06599A8D3CD2 /* Pods_Audio_Book_Player.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Audio_Book_Player.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADFA7C9E1B106AB534C19F39 /* Pods-Audio Book Player.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Audio Book Player.release.xcconfig"; path = "Target Support Files/Pods-Audio Book Player/Pods-Audio Book Player.release.xcconfig"; sourceTree = "<group>"; };
+		F46CA85534449E0A0685B037 /* Pods-Audio Book Player.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Audio Book Player.debug.xcconfig"; path = "Target Support Files/Pods-Audio Book Player/Pods-Audio Book Player.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C404BC3231C7BBEFDA1AD04 /* Pods_Audio_Book_Player.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,17 +53,12 @@
 		1770B0D82B641ADD000EF6A9 = {
 			isa = PBXGroup;
 			children = (
+				17D840122B6663A10080D25E /* server */,
 				1770B0E32B641ADE000EF6A9 /* Audio Book Player */,
-				1770B0E22B641ADE000EF6A9 /* Products */,
+				39807BB29418BDB15D2EEF8C /* Pods */,
+				54A606EEC9CF386DD7AD6F5B /* Frameworks */,
+				179568992B66875A005CE021 /* Audio Book Player.app */,
 			);
-			sourceTree = "<group>";
-		};
-		1770B0E22B641ADE000EF6A9 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				1770B0E12B641ADE000EF6A9 /* Audio Book Player.app */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		1770B0E32B641ADE000EF6A9 /* Audio Book Player */ = {
@@ -58,13 +66,49 @@
 			children = (
 				1770B0E42B641ADE000EF6A9 /* AppDelegate.swift */,
 				1770B0E62B641ADE000EF6A9 /* SceneDelegate.swift */,
-				1770B0E82B641ADE000EF6A9 /* ViewController.swift */,
+				1770B0E82B641ADE000EF6A9 /* TabBarController.swift */,
 				1770B0EA2B641ADE000EF6A9 /* Main.storyboard */,
-				1770B0F02B641ADF000EF6A9 /* Assets.xcassets */,
 				1770B0F22B641ADF000EF6A9 /* LaunchScreen.storyboard */,
+				1770B0F02B641ADF000EF6A9 /* Assets.xcassets */,
 				1770B0F52B641ADF000EF6A9 /* Info.plist */,
 			);
 			path = "Audio Book Player";
+			sourceTree = "<group>";
+		};
+		1795689A2B670B25005CE021 /* site */ = {
+			isa = PBXGroup;
+			children = (
+				179568A72B671145005CE021 /* index.html */,
+				179568A62B671145005CE021 /* filemanager.js */,
+			);
+			path = site;
+			sourceTree = "<group>";
+		};
+		17D840122B6663A10080D25E /* server */ = {
+			isa = PBXGroup;
+			children = (
+				1795689A2B670B25005CE021 /* site */,
+				17D840182B6665830080D25E /* WebServerManager.swift */,
+				179568AA2B6711F8005CE021 /* ConsoleFileManager.swift */,
+			);
+			path = server;
+			sourceTree = "<group>";
+		};
+		39807BB29418BDB15D2EEF8C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F46CA85534449E0A0685B037 /* Pods-Audio Book Player.debug.xcconfig */,
+				ADFA7C9E1B106AB534C19F39 /* Pods-Audio Book Player.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		54A606EEC9CF386DD7AD6F5B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A6CA10DA5E9F06599A8D3CD2 /* Pods_Audio_Book_Player.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,19 +118,19 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1770B0F82B641ADF000EF6A9 /* Build configuration list for PBXNativeTarget "Audio Book Player" */;
 			buildPhases = (
+				5F9ED79668DD5D4616C122AC /* [CP] Check Pods Manifest.lock */,
 				1770B0DD2B641ADE000EF6A9 /* Sources */,
 				1770B0DE2B641ADE000EF6A9 /* Frameworks */,
 				1770B0DF2B641ADE000EF6A9 /* Resources */,
+				4A68B92EAFE5F6021994A0FA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = "Audio Book Player";
-			packageProductDependencies = (
-			);
 			productName = "Audio Book Player";
-			productReference = 1770B0E12B641ADE000EF6A9 /* Audio Book Player.app */;
+			productReference = 179568992B66875A005CE021 /* Audio Book Player.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -101,6 +145,7 @@
 				TargetAttributes = {
 					1770B0E02B641ADE000EF6A9 = {
 						CreatedOnToolsVersion = 15.2;
+						LastSwiftMigration = 1520;
 					};
 				};
 			};
@@ -113,9 +158,7 @@
 				Base,
 			);
 			mainGroup = 1770B0D82B641ADD000EF6A9;
-			packageReferences = (
-			);
-			productRefGroup = 1770B0E22B641ADE000EF6A9 /* Products */;
+			productRefGroup = 1770B0D82B641ADD000EF6A9;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -129,6 +172,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				179568A92B671145005CE021 /* index.html in Resources */,
+				179568A82B671145005CE021 /* filemanager.js in Resources */,
 				1770B0F42B641ADF000EF6A9 /* LaunchScreen.storyboard in Resources */,
 				1770B0F12B641ADF000EF6A9 /* Assets.xcassets in Resources */,
 				1770B0EC2B641ADE000EF6A9 /* Main.storyboard in Resources */,
@@ -137,14 +182,58 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4A68B92EAFE5F6021994A0FA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Audio Book Player/Pods-Audio Book Player-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Audio Book Player/Pods-Audio Book Player-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Audio Book Player/Pods-Audio Book Player-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5F9ED79668DD5D4616C122AC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Audio Book Player-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1770B0DD2B641ADE000EF6A9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1770B0E92B641ADE000EF6A9 /* ViewController.swift in Sources */,
+				1770B0E92B641ADE000EF6A9 /* TabBarController.swift in Sources */,
+				17D840192B6665830080D25E /* WebServerManager.swift in Sources */,
 				1770B0E52B641ADE000EF6A9 /* AppDelegate.swift in Sources */,
 				1770B0E72B641ADE000EF6A9 /* SceneDelegate.swift in Sources */,
+				179568AB2B6711F8005CE021 /* ConsoleFileManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,12 +380,16 @@
 		};
 		1770B0F92B641ADF000EF6A9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F46CA85534449E0A0685B037 /* Pods-Audio Book Player.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 94UH37ZMA3;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Audio Book Player/Info.plist";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.music";
@@ -305,6 +398,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -312,10 +406,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "tab.Audio-Book-Player";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "server/Audio Book Player-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -323,12 +420,15 @@
 		};
 		1770B0FA2B641ADF000EF6A9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ADFA7C9E1B106AB534C19F39 /* Pods-Audio Book Player.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 94UH37ZMA3;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Audio Book Player/Info.plist";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.music";
@@ -337,6 +437,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -344,10 +445,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "tab.Audio-Book-Player";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "server/Audio Book Player-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

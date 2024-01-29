@@ -1,0 +1,4 @@
+target 'MyApp' do
+  use_frameworks!
+  pod "GCDWebServer/WebUploader", "~> 3.0"
+end

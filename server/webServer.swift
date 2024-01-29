@@ -1,8 +1,17 @@
-//
-//  Server.swift
-//  Audio Book Player
-//
-//  Created by Дмитрий Богданов on 28.01.2024.
-//
 
 import Foundation
+import GCDWebServers
+ 
+func initWebServer() {
+ 
+    let webServer = GCDWebServer()
+ 
+    webServer.addDefaultHandlerForMethod("GET", requestClass: GCDWebServerRequest.self, processBlock: {request in
+    return GCDWebServerDataResponse(HTML:"<html><body><p>Hello World</p></body></html>")
+ 
+    })
+ 
+    webServer.runWithPort(8080, bonjourName: "GCD Web Server")
+ 
+    print("Visit \(webServer.serverURL) in your web browser")
+}

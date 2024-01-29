@@ -7,16 +7,30 @@
 
 import UIKit
 import CoreData
+import GCDWebServer
 
-@main
+//@main
+@UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
-
+    
+    var window: UIWindow?
+    var webServerManager = WebServerManager()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        // Запуск сервера при запуске приложения
+        webServerManager.startServer()
         return true
     }
+
+    func applicationWillTerminate(_ application: UIApplication) {
+        // Остановка сервера перед выходом из приложения
+        webServerManager.stopServer()
+    }
+
+//    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+//        // Override point for customization after application launch.
+//        return true
+//    }
 
     // MARK: UISceneSession Lifecycle
 
