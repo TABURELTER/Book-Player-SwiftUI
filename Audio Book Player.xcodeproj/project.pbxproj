@@ -7,20 +7,66 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		17444F382B67AAD300DC9ABB /* html5shiv.min.js in Resources */ = {isa = PBXBuildFile; fileRef = 17444F2E2B67AAD300DC9ABB /* html5shiv.min.js */; };
+		17444F392B67AAD300DC9ABB /* jquery.iframe-transport.js in Resources */ = {isa = PBXBuildFile; fileRef = 17444F2F2B67AAD300DC9ABB /* jquery.iframe-transport.js */; };
+		17444F3A2B67AAD300DC9ABB /* respond.min.js in Resources */ = {isa = PBXBuildFile; fileRef = 17444F302B67AAD300DC9ABB /* respond.min.js */; };
+		17444F3B2B67AAD300DC9ABB /* jquery.min.js in Resources */ = {isa = PBXBuildFile; fileRef = 17444F312B67AAD300DC9ABB /* jquery.min.js */; };
+		17444F3C2B67AAD300DC9ABB /* jquery.jeditable.js in Resources */ = {isa = PBXBuildFile; fileRef = 17444F322B67AAD300DC9ABB /* jquery.jeditable.js */; };
+		17444F3D2B67AAD300DC9ABB /* jquery.ui.widget.js in Resources */ = {isa = PBXBuildFile; fileRef = 17444F332B67AAD300DC9ABB /* jquery.ui.widget.js */; };
+		17444F3E2B67AAD300DC9ABB /* index.js in Resources */ = {isa = PBXBuildFile; fileRef = 17444F342B67AAD300DC9ABB /* index.js */; };
+		17444F3F2B67AAD300DC9ABB /* tmpl.min.js in Resources */ = {isa = PBXBuildFile; fileRef = 17444F352B67AAD300DC9ABB /* tmpl.min.js */; };
+		17444F402B67AAD300DC9ABB /* jquery.fileupload.js in Resources */ = {isa = PBXBuildFile; fileRef = 17444F362B67AAD300DC9ABB /* jquery.fileupload.js */; };
+		17444F412B67AAD300DC9ABB /* bootstrap.min.js in Resources */ = {isa = PBXBuildFile; fileRef = 17444F372B67AAD300DC9ABB /* bootstrap.min.js */; };
+		17444F432B67AB1200DC9ABB /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 17444F422B67AB1200DC9ABB /* index.html */; };
+		17444F482B67AB6B00DC9ABB /* bootstrap-theme.css in Resources */ = {isa = PBXBuildFile; fileRef = 17444F442B67AB6B00DC9ABB /* bootstrap-theme.css */; };
+		17444F492B67AB6B00DC9ABB /* jquery.fileupload.css in Resources */ = {isa = PBXBuildFile; fileRef = 17444F452B67AB6B00DC9ABB /* jquery.fileupload.css */; };
+		17444F4A2B67AB6B00DC9ABB /* bootstrap.css in Resources */ = {isa = PBXBuildFile; fileRef = 17444F462B67AB6B00DC9ABB /* bootstrap.css */; };
+		17444F4B2B67AB6B00DC9ABB /* index.css in Resources */ = {isa = PBXBuildFile; fileRef = 17444F472B67AB6B00DC9ABB /* index.css */; };
+		17444F512B67B24B00DC9ABB /* cell register.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17444F502B67B24B00DC9ABB /* cell register.swift */; };
+		17444F532B69B09D00DC9ABB /* test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17444F522B69B09D00DC9ABB /* test.swift */; };
 		1770B0E52B641ADE000EF6A9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1770B0E42B641ADE000EF6A9 /* AppDelegate.swift */; };
 		1770B0E72B641ADE000EF6A9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1770B0E62B641ADE000EF6A9 /* SceneDelegate.swift */; };
 		1770B0E92B641ADE000EF6A9 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1770B0E82B641ADE000EF6A9 /* TabBarController.swift */; };
 		1770B0EC2B641ADE000EF6A9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1770B0EA2B641ADE000EF6A9 /* Main.storyboard */; };
 		1770B0F12B641ADF000EF6A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1770B0F02B641ADF000EF6A9 /* Assets.xcassets */; };
 		1770B0F42B641ADF000EF6A9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1770B0F22B641ADF000EF6A9 /* LaunchScreen.storyboard */; };
+		177303E12B80936500443046 /* The Hatters - Я делаю шаг.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 177303E02B80936500443046 /* The Hatters - Я делаю шаг.mp3 */; };
+		177303E32B80967A00443046 /* ClosePlayerUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177303E22B80967A00443046 /* ClosePlayerUI.swift */; };
+		177303E52B80A8A900443046 /* TabBarUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177303E42B80A8A900443046 /* TabBarUI.swift */; };
+		177303E72B80AB9200443046 /* BlurViewUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177303E62B80AB9200443046 /* BlurViewUI.swift */; };
+		177303EA2B813DD100443046 /* AlbumUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177303E92B813DD100443046 /* AlbumUI.swift */; };
+		177303EC2B813DF100443046 /* ArtistsUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177303EB2B813DF100443046 /* ArtistsUI.swift */; };
+		177303EE2B813E2000443046 /* FilesUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177303ED2B813E2000443046 /* FilesUI.swift */; };
+		177531162B78DE8D0082DB7B /* AudioEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177531152B78DE8D0082DB7B /* AudioEngine.swift */; };
+		1775311D2B78E4560082DB7B /* OpenPlayerUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1775311C2B78E4560082DB7B /* OpenPlayerUI.swift */; };
+		1775311F2B78FEFA0082DB7B /* The-Weeknd-Biling-Lights.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1775311E2B78FEFA0082DB7B /* The-Weeknd-Biling-Lights.mp3 */; };
 		179568A82B671145005CE021 /* filemanager.js in Resources */ = {isa = PBXBuildFile; fileRef = 179568A62B671145005CE021 /* filemanager.js */; };
-		179568A92B671145005CE021 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 179568A72B671145005CE021 /* index.html */; };
-		179568AB2B6711F8005CE021 /* ConsoleFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179568AA2B6711F8005CE021 /* ConsoleFileManager.swift */; };
+		179568A92B671145005CE021 /* index2.html in Resources */ = {isa = PBXBuildFile; fileRef = 179568A72B671145005CE021 /* index2.html */; };
 		17D840192B6665830080D25E /* WebServerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D840182B6665830080D25E /* WebServerManager.swift */; };
+		17EA45432B7239EF00AA678E /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17EA45422B7239EF00AA678E /* SwiftUIView.swift */; };
+		17EA456D2B73841B00AA678E /* FileChoise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17EA456C2B73841B00AA678E /* FileChoise.swift */; };
 		7C404BC3231C7BBEFDA1AD04 /* Pods_Audio_Book_Player.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6CA10DA5E9F06599A8D3CD2 /* Pods_Audio_Book_Player.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		17444F2E2B67AAD300DC9ABB /* html5shiv.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = html5shiv.min.js; sourceTree = "<group>"; };
+		17444F2F2B67AAD300DC9ABB /* jquery.iframe-transport.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "jquery.iframe-transport.js"; sourceTree = "<group>"; };
+		17444F302B67AAD300DC9ABB /* respond.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = respond.min.js; sourceTree = "<group>"; };
+		17444F312B67AAD300DC9ABB /* jquery.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = jquery.min.js; sourceTree = "<group>"; };
+		17444F322B67AAD300DC9ABB /* jquery.jeditable.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = jquery.jeditable.js; sourceTree = "<group>"; };
+		17444F332B67AAD300DC9ABB /* jquery.ui.widget.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = jquery.ui.widget.js; sourceTree = "<group>"; };
+		17444F342B67AAD300DC9ABB /* index.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = index.js; sourceTree = "<group>"; };
+		17444F352B67AAD300DC9ABB /* tmpl.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = tmpl.min.js; sourceTree = "<group>"; };
+		17444F362B67AAD300DC9ABB /* jquery.fileupload.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = jquery.fileupload.js; sourceTree = "<group>"; };
+		17444F372B67AAD300DC9ABB /* bootstrap.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = bootstrap.min.js; sourceTree = "<group>"; };
+		17444F422B67AB1200DC9ABB /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		17444F442B67AB6B00DC9ABB /* bootstrap-theme.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = "bootstrap-theme.css"; sourceTree = "<group>"; };
+		17444F452B67AB6B00DC9ABB /* jquery.fileupload.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = jquery.fileupload.css; sourceTree = "<group>"; };
+		17444F462B67AB6B00DC9ABB /* bootstrap.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = bootstrap.css; sourceTree = "<group>"; };
+		17444F472B67AB6B00DC9ABB /* index.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = index.css; sourceTree = "<group>"; };
+		17444F502B67B24B00DC9ABB /* cell register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "cell register.swift"; sourceTree = "<group>"; };
+		17444F522B69B09D00DC9ABB /* test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test.swift; sourceTree = "<group>"; };
+		17444F542B6BE84800DC9ABB /* player.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = player.storyboard; path = "/Users/tab/Documents/SWIFT/Audio Book Player/Audio Book Player/player.storyboard"; sourceTree = "<absolute>"; };
 		1770B0E42B641ADE000EF6A9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1770B0E62B641ADE000EF6A9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		1770B0E82B641ADE000EF6A9 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
@@ -28,11 +74,22 @@
 		1770B0F02B641ADF000EF6A9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1770B0F32B641ADF000EF6A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1770B0F52B641ADF000EF6A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		177303E02B80936500443046 /* The Hatters - Я делаю шаг.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "The Hatters - Я делаю шаг.mp3"; sourceTree = "<group>"; };
+		177303E22B80967A00443046 /* ClosePlayerUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosePlayerUI.swift; sourceTree = "<group>"; };
+		177303E42B80A8A900443046 /* TabBarUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarUI.swift; sourceTree = "<group>"; };
+		177303E62B80AB9200443046 /* BlurViewUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurViewUI.swift; sourceTree = "<group>"; };
+		177303E92B813DD100443046 /* AlbumUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumUI.swift; sourceTree = "<group>"; };
+		177303EB2B813DF100443046 /* ArtistsUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistsUI.swift; sourceTree = "<group>"; };
+		177303ED2B813E2000443046 /* FilesUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilesUI.swift; sourceTree = "<group>"; };
+		177531152B78DE8D0082DB7B /* AudioEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AudioEngine.swift; path = "Audio Book Player/AudioEngine.swift"; sourceTree = SOURCE_ROOT; };
+		1775311C2B78E4560082DB7B /* OpenPlayerUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenPlayerUI.swift; sourceTree = "<group>"; };
+		1775311E2B78FEFA0082DB7B /* The-Weeknd-Biling-Lights.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "The-Weeknd-Biling-Lights.mp3"; sourceTree = "<group>"; };
 		179568992B66875A005CE021 /* Audio Book Player.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Audio Book Player.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		179568A62B671145005CE021 /* filemanager.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = filemanager.js; sourceTree = "<group>"; };
-		179568A72B671145005CE021 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
-		179568AA2B6711F8005CE021 /* ConsoleFileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsoleFileManager.swift; sourceTree = "<group>"; };
+		179568A72B671145005CE021 /* index2.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index2.html; sourceTree = "<group>"; };
 		17D840182B6665830080D25E /* WebServerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebServerManager.swift; sourceTree = "<group>"; };
+		17EA45422B7239EF00AA678E /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
+		17EA456C2B73841B00AA678E /* FileChoise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileChoise.swift; sourceTree = "<group>"; };
 		A6CA10DA5E9F06599A8D3CD2 /* Pods_Audio_Book_Player.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Audio_Book_Player.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADFA7C9E1B106AB534C19F39 /* Pods-Audio Book Player.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Audio Book Player.release.xcconfig"; path = "Target Support Files/Pods-Audio Book Player/Pods-Audio Book Player.release.xcconfig"; sourceTree = "<group>"; };
 		F46CA85534449E0A0685B037 /* Pods-Audio Book Player.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Audio Book Player.debug.xcconfig"; path = "Target Support Files/Pods-Audio Book Player/Pods-Audio Book Player.debug.xcconfig"; sourceTree = "<group>"; };
@@ -50,6 +107,55 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		17444F4C2B67ABAE00DC9ABB /* css */ = {
+			isa = PBXGroup;
+			children = (
+				17444F442B67AB6B00DC9ABB /* bootstrap-theme.css */,
+				17444F462B67AB6B00DC9ABB /* bootstrap.css */,
+				17444F472B67AB6B00DC9ABB /* index.css */,
+				17444F452B67AB6B00DC9ABB /* jquery.fileupload.css */,
+			);
+			path = css;
+			sourceTree = "<group>";
+		};
+		17444F4D2B67ABC000DC9ABB /* js */ = {
+			isa = PBXGroup;
+			children = (
+				17444F372B67AAD300DC9ABB /* bootstrap.min.js */,
+				17444F2E2B67AAD300DC9ABB /* html5shiv.min.js */,
+				17444F342B67AAD300DC9ABB /* index.js */,
+				17444F362B67AAD300DC9ABB /* jquery.fileupload.js */,
+				17444F2F2B67AAD300DC9ABB /* jquery.iframe-transport.js */,
+				179568A62B671145005CE021 /* filemanager.js */,
+				17444F322B67AAD300DC9ABB /* jquery.jeditable.js */,
+				17444F312B67AAD300DC9ABB /* jquery.min.js */,
+				17444F332B67AAD300DC9ABB /* jquery.ui.widget.js */,
+				17444F302B67AAD300DC9ABB /* respond.min.js */,
+				17444F352B67AAD300DC9ABB /* tmpl.min.js */,
+			);
+			path = js;
+			sourceTree = "<group>";
+		};
+		17444F4E2B67B11C00DC9ABB /* launch logic */ = {
+			isa = PBXGroup;
+			children = (
+				1770B0E42B641ADE000EF6A9 /* AppDelegate.swift */,
+				1770B0E62B641ADE000EF6A9 /* SceneDelegate.swift */,
+				17EA45422B7239EF00AA678E /* SwiftUIView.swift */,
+				1770B0E82B641ADE000EF6A9 /* TabBarController.swift */,
+			);
+			path = "launch logic";
+			sourceTree = "<group>";
+		};
+		17444F4F2B67B21F00DC9ABB /* TESTS */ = {
+			isa = PBXGroup;
+			children = (
+				17444F522B69B09D00DC9ABB /* test.swift */,
+				17444F502B67B24B00DC9ABB /* cell register.swift */,
+			);
+			path = TESTS;
+			sourceTree = "<group>";
+		};
 		1770B0D82B641ADD000EF6A9 = {
 			isa = PBXGroup;
 			children = (
@@ -64,10 +170,13 @@
 		1770B0E32B641ADE000EF6A9 /* Audio Book Player */ = {
 			isa = PBXGroup;
 			children = (
-				1770B0E42B641ADE000EF6A9 /* AppDelegate.swift */,
-				1770B0E62B641ADE000EF6A9 /* SceneDelegate.swift */,
-				1770B0E82B641ADE000EF6A9 /* TabBarController.swift */,
+				177303E82B812EE700443046 /* UI */,
+				177531132B758F290082DB7B /* Files */,
+				17444F4E2B67B11C00DC9ABB /* launch logic */,
+				177531142B78DE640082DB7B /* Audio player */,
+				17444F4F2B67B21F00DC9ABB /* TESTS */,
 				1770B0EA2B641ADE000EF6A9 /* Main.storyboard */,
+				17444F542B6BE84800DC9ABB /* player.storyboard */,
 				1770B0F22B641ADF000EF6A9 /* LaunchScreen.storyboard */,
 				1770B0F02B641ADF000EF6A9 /* Assets.xcassets */,
 				1770B0F52B641ADF000EF6A9 /* Info.plist */,
@@ -75,11 +184,77 @@
 			path = "Audio Book Player";
 			sourceTree = "<group>";
 		};
+		177303E82B812EE700443046 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				177303E42B80A8A900443046 /* TabBarUI.swift */,
+				177303EF2B813E3F00443046 /* TabBarPages */,
+				177303F02B813E5100443046 /* Player */,
+				177303F12B813E9B00443046 /* Effects */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		177303EF2B813E3F00443046 /* TabBarPages */ = {
+			isa = PBXGroup;
+			children = (
+				177303E92B813DD100443046 /* AlbumUI.swift */,
+				177303EB2B813DF100443046 /* ArtistsUI.swift */,
+				177303ED2B813E2000443046 /* FilesUI.swift */,
+			);
+			path = TabBarPages;
+			sourceTree = "<group>";
+		};
+		177303F02B813E5100443046 /* Player */ = {
+			isa = PBXGroup;
+			children = (
+				1775311C2B78E4560082DB7B /* OpenPlayerUI.swift */,
+				177303E22B80967A00443046 /* ClosePlayerUI.swift */,
+			);
+			path = Player;
+			sourceTree = "<group>";
+		};
+		177303F12B813E9B00443046 /* Effects */ = {
+			isa = PBXGroup;
+			children = (
+				177303E62B80AB9200443046 /* BlurViewUI.swift */,
+			);
+			path = Effects;
+			sourceTree = "<group>";
+		};
+		177531132B758F290082DB7B /* Files */ = {
+			isa = PBXGroup;
+			children = (
+				17EA456C2B73841B00AA678E /* FileChoise.swift */,
+			);
+			path = Files;
+			sourceTree = "<group>";
+		};
+		177531142B78DE640082DB7B /* Audio player */ = {
+			isa = PBXGroup;
+			children = (
+				177531172B78E1ED0082DB7B /* test audio */,
+				177531152B78DE8D0082DB7B /* AudioEngine.swift */,
+			);
+			path = "Audio player";
+			sourceTree = "<group>";
+		};
+		177531172B78E1ED0082DB7B /* test audio */ = {
+			isa = PBXGroup;
+			children = (
+				177303E02B80936500443046 /* The Hatters - Я делаю шаг.mp3 */,
+				1775311E2B78FEFA0082DB7B /* The-Weeknd-Biling-Lights.mp3 */,
+			);
+			path = "test audio";
+			sourceTree = "<group>";
+		};
 		1795689A2B670B25005CE021 /* site */ = {
 			isa = PBXGroup;
 			children = (
-				179568A72B671145005CE021 /* index.html */,
-				179568A62B671145005CE021 /* filemanager.js */,
+				17444F4D2B67ABC000DC9ABB /* js */,
+				17444F4C2B67ABAE00DC9ABB /* css */,
+				17444F422B67AB1200DC9ABB /* index.html */,
+				179568A72B671145005CE021 /* index2.html */,
 			);
 			path = site;
 			sourceTree = "<group>";
@@ -89,7 +264,6 @@
 			children = (
 				1795689A2B670B25005CE021 /* site */,
 				17D840182B6665830080D25E /* WebServerManager.swift */,
-				179568AA2B6711F8005CE021 /* ConsoleFileManager.swift */,
 			);
 			path = server;
 			sourceTree = "<group>";
@@ -172,11 +346,28 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				179568A92B671145005CE021 /* index.html in Resources */,
+				17444F3C2B67AAD300DC9ABB /* jquery.jeditable.js in Resources */,
+				179568A92B671145005CE021 /* index2.html in Resources */,
+				17444F3D2B67AAD300DC9ABB /* jquery.ui.widget.js in Resources */,
+				17444F3F2B67AAD300DC9ABB /* tmpl.min.js in Resources */,
+				17444F3E2B67AAD300DC9ABB /* index.js in Resources */,
+				17444F432B67AB1200DC9ABB /* index.html in Resources */,
+				17444F3B2B67AAD300DC9ABB /* jquery.min.js in Resources */,
+				17444F4A2B67AB6B00DC9ABB /* bootstrap.css in Resources */,
 				179568A82B671145005CE021 /* filemanager.js in Resources */,
+				17444F482B67AB6B00DC9ABB /* bootstrap-theme.css in Resources */,
 				1770B0F42B641ADF000EF6A9 /* LaunchScreen.storyboard in Resources */,
 				1770B0F12B641ADF000EF6A9 /* Assets.xcassets in Resources */,
+				17444F492B67AB6B00DC9ABB /* jquery.fileupload.css in Resources */,
+				1775311F2B78FEFA0082DB7B /* The-Weeknd-Biling-Lights.mp3 in Resources */,
 				1770B0EC2B641ADE000EF6A9 /* Main.storyboard in Resources */,
+				177303E12B80936500443046 /* The Hatters - Я делаю шаг.mp3 in Resources */,
+				17444F392B67AAD300DC9ABB /* jquery.iframe-transport.js in Resources */,
+				17444F3A2B67AAD300DC9ABB /* respond.min.js in Resources */,
+				17444F4B2B67AB6B00DC9ABB /* index.css in Resources */,
+				17444F412B67AAD300DC9ABB /* bootstrap.min.js in Resources */,
+				17444F402B67AAD300DC9ABB /* jquery.fileupload.js in Resources */,
+				17444F382B67AAD300DC9ABB /* html5shiv.min.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,11 +420,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				177531162B78DE8D0082DB7B /* AudioEngine.swift in Sources */,
 				1770B0E92B641ADE000EF6A9 /* TabBarController.swift in Sources */,
+				17EA45432B7239EF00AA678E /* SwiftUIView.swift in Sources */,
+				177303E52B80A8A900443046 /* TabBarUI.swift in Sources */,
+				17444F532B69B09D00DC9ABB /* test.swift in Sources */,
+				177303EA2B813DD100443046 /* AlbumUI.swift in Sources */,
+				177303EE2B813E2000443046 /* FilesUI.swift in Sources */,
 				17D840192B6665830080D25E /* WebServerManager.swift in Sources */,
 				1770B0E52B641ADE000EF6A9 /* AppDelegate.swift in Sources */,
 				1770B0E72B641ADE000EF6A9 /* SceneDelegate.swift in Sources */,
-				179568AB2B6711F8005CE021 /* ConsoleFileManager.swift in Sources */,
+				1775311D2B78E4560082DB7B /* OpenPlayerUI.swift in Sources */,
+				177303EC2B813DF100443046 /* ArtistsUI.swift in Sources */,
+				17EA456D2B73841B00AA678E /* FileChoise.swift in Sources */,
+				17444F512B67B24B00DC9ABB /* cell register.swift in Sources */,
+				177303E72B80AB9200443046 /* BlurViewUI.swift in Sources */,
+				177303E32B80967A00443046 /* ClosePlayerUI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -388,7 +590,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 94UH37ZMA3;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Audio Book Player/Info.plist";
@@ -398,7 +600,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -437,7 +639,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

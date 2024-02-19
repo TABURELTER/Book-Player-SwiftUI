@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Audio Player Control BadUI-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="AudioPlayerControlBadUI" customModule="Audio_Book_Player" customModuleProvider="target" sceneMemberID="viewController">
+                    <connections>
+                        <outlet property="PausePlayButton" destination="UER-sY-TEL" id="bE5-Uv-EXO"/>
+                        <outlet property="img" destination="0V0-PW-Z10" id="KkT-H3-a6I"/>
+                        <outlet property="slider" destination="3GH-Az-LMw" id="urV-2e-edo"/>
+                        <outlet property="view" destination="5EZ-qb-Rvc" id="vse-m5-tll"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <view contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0V0-PW-Z10">
+                            <rect key="frame" x="76" y="140" width="241" height="240"/>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UER-sY-TEL">
+                            <rect key="frame" x="174" y="594" width="45" height="35"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="gray" image="play.fill" catalog="system"/>
+                            <connections>
+                                <action selector="PlayStop:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="OgR-f1-cjb"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fh0-9B-kbs">
+                            <rect key="frame" x="321" y="594" width="56" height="35"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="gray" image="forward.fill" catalog="system"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lUc-OO-eCV">
+                            <rect key="frame" x="99" y="594" width="50" height="35"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="gray" image="gobackward.30" catalog="system"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6E1-xs-XOZ">
+                            <rect key="frame" x="244" y="594" width="50" height="35"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="gray" image="goforward.30" catalog="system"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TB1-KJ-A8d">
+                            <rect key="frame" x="16" y="594" width="56" height="35"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="gray" image="backward.fill" catalog="system"/>
+                        </button>
+                        <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="3GH-Az-LMw">
+                            <rect key="frame" x="14" y="464" width="365" height="31"/>
+                        </slider>
+                    </subviews>
+                    <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="TB1-KJ-A8d" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="535" id="0ds-zn-0v9"/>
+                        <constraint firstItem="UER-sY-TEL" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="174" id="3Rp-WN-UiX"/>
+                        <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="UER-sY-TEL" secondAttribute="bottom" constant="189" id="3eB-9h-Ll7"/>
+                        <constraint firstItem="3GH-Az-LMw" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="50G-wt-6go"/>
+                        <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="3GH-Az-LMw" secondAttribute="trailing" constant="16" id="7o9-X8-d5c"/>
+                        <constraint firstItem="3GH-Az-LMw" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="405" id="8Pq-sL-1HF"/>
+                        <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="lUc-OO-eCV" secondAttribute="trailing" constant="244" id="8dn-gw-nKi"/>
+                        <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="TB1-KJ-A8d" secondAttribute="trailing" constant="321" id="9Ga-DY-1cF"/>
+                        <constraint firstItem="Fh0-9B-kbs" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="535" id="9g1-rv-CAA"/>
+                        <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="3GH-Az-LMw" secondAttribute="bottom" constant="324" id="HBS-FH-MGp"/>
+                        <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="6E1-xs-XOZ" secondAttribute="trailing" constant="99" id="Op3-Db-1di"/>
+                        <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="Fh0-9B-kbs" secondAttribute="bottom" constant="189" id="Plr-y9-BTN"/>
+                        <constraint firstItem="Fh0-9B-kbs" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="321" id="Rcq-9Y-FPe"/>
+                        <constraint firstItem="lUc-OO-eCV" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="99" id="U33-31-9jQ"/>
+                        <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="TB1-KJ-A8d" secondAttribute="bottom" constant="189" id="WfN-fK-jWb"/>
+                        <constraint firstItem="0V0-PW-Z10" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="81" id="Y2F-oy-D9X"/>
+                        <constraint firstItem="UER-sY-TEL" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="Y9U-BH-mJn"/>
+                        <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Fh0-9B-kbs" secondAttribute="trailing" constant="16" id="ZcP-JC-F9p"/>
+                        <constraint firstItem="UER-sY-TEL" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="535" id="esD-tN-GIQ"/>
+                        <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="UER-sY-TEL" secondAttribute="trailing" constant="174" id="g9c-Dd-Qwg"/>
+                        <constraint firstItem="TB1-KJ-A8d" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="jgR-lJ-ZUw"/>
+                        <constraint firstItem="3GH-Az-LMw" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="kBn-Vs-z9Z"/>
+                        <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="6E1-xs-XOZ" secondAttribute="bottom" constant="189" id="pPq-pf-vFa"/>
+                        <constraint firstItem="0V0-PW-Z10" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="76" id="qPD-Jf-p3p"/>
+                        <constraint firstItem="6E1-xs-XOZ" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="535" id="r4L-jA-iYz"/>
+                        <constraint firstItem="lUc-OO-eCV" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="535" id="ryB-XQ-tum"/>
+                        <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="0V0-PW-Z10" secondAttribute="trailing" constant="76" id="vHq-0K-0YQ"/>
+                        <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="0V0-PW-Z10" secondAttribute="bottom" constant="438" id="vQq-GT-0DV"/>
+                        <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="lUc-OO-eCV" secondAttribute="bottom" constant="189" id="wCe-LP-dic"/>
+                        <constraint firstItem="6E1-xs-XOZ" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="244" id="ytK-v1-yLH"/>
+                        <constraint firstItem="0V0-PW-Z10" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="zTm-av-jM4"/>
+                    </constraints>
+                </view>
+            </objects>
+            <point key="canvasLocation" x="135.1145038167939" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="backward.fill" catalog="system" width="128" height="77"/>
+        <image name="forward.fill" catalog="system" width="128" height="77"/>
+        <image name="gobackward.30" catalog="system" width="119" height="128"/>
+        <image name="goforward.30" catalog="system" width="119" height="128"/>
+        <image name="play.fill" catalog="system" width="117" height="128"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
