@@ -37,25 +37,18 @@ class TestSaveLoad:UIViewController{
         //        Swift.print("remove")
         defaults.removeObject(forKey: "save")
     }
-    let player = AudioEngine()
+//    let player = AudioEngine()
     @IBAction func play(_ sender: Any) {
-        player.play()
+//        player.play()
     }
     
     @IBAction func pause(_ sender: Any) {
-        player.pause()
+//        player.pause()
     }
     
 }
 
-class TryLoadSwiftUI : UIHostingController<TabBarUI> {
-    //class TryLoadSwiftUI : UIHostingController<OpenPlayerUI> {
-    
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder, rootView: TabBarUI())
-        //            super.init(coder: aDecoder, rootView: OpenPlayerUI())
-    }
-}
+
 
 
 

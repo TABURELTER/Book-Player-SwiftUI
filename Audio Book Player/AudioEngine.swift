@@ -5,78 +5,30 @@
 //  Created by Дмитрий Богданов on 11.02.2024.
 //
 
-import AVFoundation
+import SwiftAudioPlayer
 
 class AudioEngine {
-    var audioEngine: AVAudioEngine!
-    var audioPlayerNode: AVAudioPlayerNode!
-    var audioFile: AVAudioFile!
-    var player: AVAudioPlayer!
     
-    init() {
-        // Создаем экземпляр AVAudioEngine
-        audioEngine = AVAudioEngine()
-        //        player = AVPlayer()
-        
-        
-        // Создаем экземпляр AVAudioPlayerNode
-        audioPlayerNode = AVAudioPlayerNode()
-        audioEngine.attach(audioPlayerNode)
-        
-        // Получаем путь к аудиофайлу
-        //        guard let audioFilePath = Bundle.main.path(forResource: "The-Weeknd-Biling-Lights", ofType: "mp3") else {
-        //            fatalError("Аудиофайл не найден")
-        //        }
-        
-        var url = URL(fileURLWithPath: Bundle.main.path(forResource: "The Hatters - Я делаю шаг.mp3", ofType: nil)!)
-        //        var url = URL(fileURLWithPath: Bundle.main.path(forResource: "The-Weeknd-Biling-Lights.mp3", ofType: nil)!)
-        var error: Error?
-        do {
-            player = try AVAudioPlayer(contentsOf: url)
-        }
-        catch let error {
-        }
-        if player == nil {
-            print("Error: \(String(describing: error))")
-        }
-        
-        
-        // Создаем экземпляр AVAudioFile на основе пути к аудиофайлу
-        //        do {
-        //            audioFile = try AVAudioFile(forReading: URL(fileURLWithPath: audioFilePath))
-        //        } catch {
-        //            fatalError("Ошибка при создании AVAudioFile: \(error)")
-        //        }
-        
-        // Подключаем AVAudioPlayerNode к mainMixerNode
-        //        let mixer = audioEngine.mainMixerNode
-        //        audioEngine.connect(audioPlayerNode, to: mixer, format: audioFile.processingFormat)
+    static public var CurrentBook:Book = generateBook()
+    
+    static public var isPlaying:Bool = false
+    
+    
+    func play(url:URL){
+        SAPlayer.shared.startSavedAudio(withSavedUrl: url)
+        AudioEngine.isPlaying = true
     }
     
-    func play() {
-        // Запускаем AVAudioEngine
-        do {
-            try audioEngine.start()
-        } catch {
-            fatalError("Ошибка при запуске AVAudioEngine: \(error)")
-        }
-        
-        // Запускаем воспроизведение аудиофайла
-        audioPlayerNode.scheduleFile(audioFile, at: nil, completionHandler: nil)
-        audioPlayerNode.play()
+    func PlayStop(){
+        SAPlayer.shared.togglePlayAndPause()
+        AudioEngine.isPlaying.toggle()
     }
     
-    func pause(){
-        audioEngine.pause()
-    }
     
-    func updateTime() -> Double {
-        return 0.0
-    }
-    
-    func GetTime() -> Double{
-        return player.currentTime
+    func ChangeRate(rate:Float){
+        SAPlayer.shared.rate = rate
     }
 }
+
 
 

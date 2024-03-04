@@ -4,12 +4,12 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>GCDWebServer.xcscheme</key>
+		<key>Pods-Audio Book Player.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-Audio Book Player.xcscheme</key>
+		<key>SwiftAudioPlayer.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>

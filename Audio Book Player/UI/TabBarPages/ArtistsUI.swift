@@ -8,11 +8,14 @@
 import SwiftUI
 
 struct ArtistsUI: View {
+    @State var Books: [Book]
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+            Text("Hello, World!")
+        }
     }
 }
 
 #Preview {
-    ArtistsUI()
+    ArtistsUI(Books: loadBooksFromUserDefaults())
 }

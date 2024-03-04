@@ -7,67 +7,79 @@
 
 import SwiftUI
 import AVFoundation
+import SwiftAudioPlayer
 import AVKit
 
 struct OpenPlayerUI: View {
+    
     @State private var time: Double = 0.0
     @State private var isEditing: Bool = false
     @State private var engine = AudioEngine()
 
+    @State private var playerDuration: TimeInterval = 100
+    private let maxDuration = TimeInterval(240)
+    
+    @State private var volume: Double = 0.3
+    private var maxVolume: Double = 1
+    
+    @State private var sliderValue: Double = 10
+    private var maxSliderValue: Double = 100
+    
+    @State private var color: Color = .white
+    
     var body: some View {
         VStack {
-            
-
-            if let albumImage = loadAlbumImage(from: engine.player.url!) {
-                Image(uiImage: albumImage)
-                    .resizable()
-                    .aspectRatio(contentMode: .fill)
-                    .frame(width: 325, height: 325)
-                    .cornerRadius(7.0)
-                    .clipped()
-            } else {
+//            if let albumImage = loadAlbumImage(from: engine.player.url!) {
+//                Image(uiImage: albumImage)
+//                    .resizable()
+//                    .aspectRatio(contentMode: .fill)
+//                    .frame(width: 325, height: 325)
+//                    .cornerRadius(7.0)
+//                    .clipped()
+//            } else {
                 Image("NoImage")
                     .resizable()
                     .aspectRatio(contentMode: .fill)
                     .frame(width: 325, height: 325)
                     .cornerRadius(7.0)
                     .clipped()
-            }
+//            }
             
             Spacer().frame(height: 40)
             
-            //TODO: ИЗМЕНИТЬ ПОЛУЧЕНИЕ ТЕКСТА В ОТДЕЛЬНУЮ ПЕРМЕННУЮ
-            Text(engine.player.url!.lastPathComponent)
+//            TODO: ИЗМЕНИТЬ ПОЛУЧЕНИЕ ТЕКСТА В ОТДЕЛЬНУЮ ПЕРМЕННУЮ
+            
+//            Text("engine.player.url!.lastPathComponent")
+            
+//            Text(SAPlayer.shared.)
                 .font(.system(size: 25, weight: .medium, design: .default))
             
             Spacer().frame(height: 50)
             
-            Slider(
-                value: Binding(
-                    get: { time },
-                    set: { newValue in
-                        time = newValue
-                        engine.player.currentTime = newValue
-                    }
-                ),
-                in: 0...(engine.player.duration > 0 ? engine.player.duration : 1),
-                onEditingChanged: { editing in
-                    isEditing = editing
-                    if !editing {
-                        engine.player.currentTime = time
-                    }
-                }
-            )
-            .frame(width: 350)
-            .frame(height: 20)
             
-            HStack {
-                Spacer().frame(width: 50)
-                Text(formatTimeInterval(time)).font(.system(size: 15))
-                Spacer()
-                Text(formatTimeInterval(engine.player.duration)).font(.system(size: 15))
-                Spacer().frame(width: 50)
-            }
+            
+            MusicProgressSlider(value: Binding(
+                get: {SAPlayer.shared.elapsedTime ?? 0},
+                set:{newV in
+//                    time = newV
+                    SAPlayer.shared.elapsedTime
+                    }),
+                                inRange: 0...(SAPlayer.shared.duration ?? 1),
+                                activeFillColor: .green,
+                                fillColor: .accentColor,
+                                emptyColor: .black,
+                                height: 32) { started in
+                
+            }.frame(width: 350, alignment: .center)
+            
+            
+//            HStack {
+//                Spacer().frame(width: 50)
+//                Text(formatTimeInterval(time)).font(.system(size: 15))
+//                Spacer()
+//                Text(formatTimeInterval(engine.player.duration)).font(.system(size: 15))
+//                Spacer().frame(width: 50)
+//            }
             Spacer().frame(height: 35)
             
             HStack(spacing: 15) {
@@ -82,7 +94,7 @@ struct OpenPlayerUI: View {
                 
                 Button(action: {
                     time -= 30
-                    engine.player.currentTime -= 30
+//                    engine.player.currentTime -= 30
                 }) {
                     Image(systemName: "gobackward.30")
                         .frame(width: 48, height: 48)
@@ -91,13 +103,9 @@ struct OpenPlayerUI: View {
                 }
                 
                 Button(action: {
-                    if engine.player.isPlaying {
-                        engine.player.pause()
-                    } else {
-                        engine.player.play()
-                    }
+                    SAPlayer.shared.togglePlayAndPause()
                 }) {
-                    Image(systemName: engine.player.isPlaying ? "pause.fill" : "play.fill")
+                    Image(systemName:"play.fill")
                         .frame(width: 48, height: 48)
                         .imageScale(.large)
                         .scaleEffect(CGSize(width: 1.3, height: 1.3))
@@ -105,7 +113,7 @@ struct OpenPlayerUI: View {
                 
                 Button(action: {
                     time += 30
-                    engine.player.currentTime += 30
+//                    engine.player.currentTime += 30
                 }) {
                     Image(systemName: "goforward.30")
                         .frame(width: 48, height: 48)
@@ -125,7 +133,7 @@ struct OpenPlayerUI: View {
         }
         .onReceive(Timer.publish(every: 0.1, on: .main, in: .common).autoconnect()) { _ in
             if !isEditing {
-                time = engine.player.currentTime
+//                time = engine.player.currentTime
             }
         }
     }

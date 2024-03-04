@@ -1,18 +1,16 @@
 PODS:
-  - GCDWebServer (3.5.4):
-    - GCDWebServer/Core (= 3.5.4)
-  - GCDWebServer/Core (3.5.4)
+  - SwiftAudioPlayer (7.6.0)
 
 DEPENDENCIES:
-  - GCDWebServer
+  - SwiftAudioPlayer
 
 SPEC REPOS:
   trunk:
-    - GCDWebServer
+    - SwiftAudioPlayer
 
 SPEC CHECKSUMS:
-  GCDWebServer: 2c156a56c8226e2d5c0c3f208a3621ccffbe3ce4
+  SwiftAudioPlayer: a546709faf47f3ab0cb59e41ba4432e6bb61db0a
 
-PODFILE CHECKSUM: ca2d5e2d07f335d131af2d9ef139485067ae7b35
+PODFILE CHECKSUM: 755a42be4ec4a0a5efdf9189ccacea98f2405bbe
 
 COCOAPODS: 1.14.3

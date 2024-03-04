@@ -5,5 +5,6 @@ target 'Audio Book Player' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
   # Pods for Audio Book Player
-    pod 'GCDWebServer'
+#    pod 'GCDWebServer'
+    pod 'SwiftAudioPlayer'
 end

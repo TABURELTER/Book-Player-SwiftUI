@@ -8,41 +8,40 @@
 import SwiftUI
 
 struct TabBarUI: View {
-    @State var Current = 3
     @State var expandet = false
-    
+    @State private var Books: [Book] = []
     @Namespace var animation
     
     var body: some View {
-        
-        
-        
-        
         ZStack(alignment: Alignment(horizontal: .center, vertical: .bottom), content: {
             
-            TabView(selection: $Current) {
-                AlbumUI()
-                //                    .frame(width: 1000,height: 1000).background(Color.red)
+            TabView() {
+                AlbumUI(Books: Books)
                 //                    .badge(2) //TODO: ADD CHECK FOR IOS 15
                     .tabItem {
                         Label("Альбомы", systemImage: "list.clipboard.fill")
                     }
-                ArtistsUI()
+                ArtistsUI(Books: Books)
                     .tabItem {
                         Label("Исполнители", systemImage: "music.mic.circle.fill")
                     }
-                FilesUI()
+                FilesUI(Books: Books)
                 //                    .badge("!") //TODO: ADD CHECK FOR IOS 15
                     .tabItem {
                         Label("Файлы", systemImage: "folder.fill")
                     }
                 
-            }
+//                OpenPlayerUI()
+//                    .tabItem {
+//                        Label("плеер", systemImage: "play.fill")
+//                    }
+                
+            }.background(BlurViewUI())
             
             ClosePlayerUI(animation: animation, expand: $expandet)
-            
-            
-        })
+        }).onAppear(){
+            Books = loadBooksFromUserDefaults()
+        }
     }
 }
 
